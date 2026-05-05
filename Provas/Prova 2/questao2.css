@@ -1,0 +1,40 @@
+body {
+    background-color: #aac4d8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+.secao {
+    background-color: #cdece6;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.secao h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+}
+.secao p {
+    color: #555;
+}
