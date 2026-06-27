@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Marido de Aluguel — O profissional certo, pelo preço justo</title>
+<meta name="description" content="Compare eletricistas, encanadores, pintores e outros profissionais por preço, avaliação e distância. Sem achismo, sem indicação às cegas." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a href="#topo" class="nav__brand">
+      <span class="nav__brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+          <path d="M3 11.5 12 4l9 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5.5 10v9.5h13V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M9.7 19.5v-5.2h4.6v5.2" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      Marido<em>de Aluguel</em>
+    </a>
+
+    <nav class="nav__links" aria-label="Navegação principal">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#categorias">Serviços</a>
+      <a href="#confianca">Por que confiar</a>
+      <a href="#numeros">Números</a>
+    </nav>
+
+    <div class="nav__cta">
+      <a href="#cadastro-prestador" class="btn btn--ghost">Sou prestador</a>
+      <a href="#buscar" class="btn btn--solid">Buscar profissional</a>
+    </div>
+
+    <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="nav__mobile" id="navMobile">
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#categorias">Serviços</a>
+    <a href="#confianca">Por que confiar</a>
+    <a href="#numeros">Números</a>
+    <a href="#cadastro-prestador" class="btn btn--ghost">Sou prestador</a>
+    <a href="#buscar" class="btn btn--solid">Buscar profissional</a>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- ============================================================
+       HERO — fita métrica como elemento de assinatura
+       ============================================================ -->
+  <section class="hero">
+    <div class="wrap hero__inner">
+
+      <div class="hero__copy">
+        <p class="eyebrow"><span class="eyebrow__dot"></span>Manutenção residencial, sem cilada</p>
+
+        <h1 class="hero__title">
+          O profissional<br>
+          certo, pelo<br>
+          <span class="hero__title-accent">preço&nbsp;justo<svg class="hero__underline" viewBox="0 0 320 18" preserveAspectRatio="none" aria-hidden="true"><path d="M2 13 C 80 4, 240 4, 318 12" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/></svg></span>
+        </h1>
+
+        <p class="hero__sub">
+          Eletricista, encanador, pintor, jardineiro. Compare três orçamentos
+          lado a lado — preço por hora, nota de avaliação e distância —
+          antes de chamar qualquer um na sua casa.
+        </p>
+
+        <form class="hero__search" id="heroSearch" role="search">
+          <svg class="hero__search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input type="text" id="heroInput" placeholder="Qual serviço você precisa? Ex.: chuveiro, tomada, vazamento…" autocomplete="off" />
+          <button type="submit" class="btn btn--solid hero__search-btn">Buscar agora</button>
+        </form>
+
+        <p class="hero__hint">Mais buscados: <button class="chip-link" data-suggest="Elétrica">elétrica</button><button class="chip-link" data-suggest="Hidráulica">hidráulica</button><button class="chip-link" data-suggest="Pintura">pintura</button></p>
+      </div>
+
+      <div class="hero__panel" aria-hidden="true">
+        <div class="os-card os-card--featured">
+          <div class="os-card__head">
+            <span class="os-card__os">OS Nº 0412</span>
+            <span class="seal">✓ Verificado</span>
+          </div>
+          <div class="os-card__pro">
+            <div class="avatar">CE</div>
+            <div>
+              <strong>Carlos Eduardo</strong>
+              <span class="muted">Elétrica residencial</span>
+            </div>
+          </div>
+          <div class="os-card__meta">
+            <div><span class="muted">Avaliação</span><strong>4.9 ★</strong></div>
+            <div><span class="muted">Distância</span><strong>1,2 km</strong></div>
+          </div>
+          <div class="os-card__price">
+            <span class="muted">a partir de</span>
+            <span class="price">R$ 120<small>/h</small></span>
+          </div>
+        </div>
+
+        <div class="os-card os-card--ghost-1">
+          <div class="os-card__head"><span class="os-card__os">OS Nº 0287</span></div>
+          <div class="os-card__pro"><div class="avatar avatar--alt">RS</div><div><strong>Roberto Silva</strong><span class="muted">Hidráulica</span></div></div>
+        </div>
+        <div class="os-card os-card--ghost-2">
+          <div class="os-card__head"><span class="os-card__os">OS Nº 0163</span></div>
+          <div class="os-card__pro"><div class="avatar avatar--alt2">AP</div><div><strong>Ana Pinturas</strong><span class="muted">Pintura</span></div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="ruler" role="presentation" aria-hidden="true">
+      <svg viewBox="0 0 1440 56" preserveAspectRatio="none" class="ruler__svg">
+        <line x1="0" y1="28" x2="1440" y2="28" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <div class="ruler__ticks" id="rulerTicks"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FAIXA DE CONFIANÇA RÁPIDA
+       ============================================================ -->
+  <section class="trustbar">
+    <div class="wrap trustbar__inner">
+      <div class="trustbar__item"><strong>1.200+</strong><span>profissionais verificados</span></div>
+      <div class="trustbar__sep" aria-hidden="true"></div>
+      <div class="trustbar__item"><strong>4,8 ★</strong><span>avaliação média da plataforma</span></div>
+      <div class="trustbar__sep" aria-hidden="true"></div>
+      <div class="trustbar__item"><strong>3 orçamentos</strong><span>comparados antes de decidir</span></div>
+      <div class="trustbar__sep" aria-hidden="true"></div>
+      <div class="trustbar__item"><strong>0</strong><span>taxa escondida no preço mostrado</span></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       COMO FUNCIONA
+       ============================================================ -->
+  <section class="how" id="como-funciona">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow"><span class="eyebrow__dot"></span>O caminho até a porta de casa</p>
+        <h2 class="h2">Três passos. Nenhuma surpresa.</h2>
+      </div>
+
+      <ol class="how__list">
+        <li class="how__step">
+          <span class="how__num">01</span>
+          <h3>Descreva o serviço</h3>
+          <p>Diga o que precisa e onde — um chuveiro que parou de esquentar, uma parede pra pintar, um vazamento embaixo da pia.</p>
+        </li>
+        <li class="how__step">
+          <span class="how__num">02</span>
+          <h3>Compare até 3 lado a lado</h3>
+          <p>Preço por hora, nota de quem já contratou e distância até você, tudo na mesma tela — sem ligar pra cinco números diferentes.</p>
+        </li>
+        <li class="how__step">
+          <span class="how__num">03</span>
+          <h3>Contrate quem faz sentido</h3>
+          <p>Peça o orçamento direto pela plataforma. Depois do serviço, sua avaliação ajuda o próximo morador a decidir melhor.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CATEGORIAS
+       ============================================================ -->
+  <section class="categories" id="categorias">
+    <div class="wrap">
+      <div class="section-head section-head--row">
+        <div>
+          <p class="eyebrow"><span class="eyebrow__dot"></span>Para todo tipo de reparo</p>
+          <h2 class="h2">Encontre por especialidade</h2>
+        </div>
+        <p class="section-head__note">Toque numa categoria para ver os profissionais disponíveis perto de você agora.</p>
+      </div>
+
+      <div class="cat-grid">
+        <button class="cat-card" data-cat="Elétrica">
+          <span class="cat-card__icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 4 14h6l-1 8 9-12h-6z" stroke-linejoin="round"/></svg></span>
+          <span class="cat-card__name">Elétrica</span>
+          <span class="cat-card__count">38 profissionais</span>
+        </button>
+
+        <button class="cat-card" data-cat="Hidráulica">
+          <span class="cat-card__icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2c3 4 6 7.2 6 11a6 6 0 1 1-12 0c0-3.8 3-7 6-11Z"/></svg></span>
+          <span class="cat-card__name">Hidráulica</span>
+          <span class="cat-card__count">26 profissionais</span>
+        </button>
+
+        <button class="cat-card" data-cat="Pintura">
+          <span class="cat-card__icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21c0-3 1-5 4-5s3 2 6 2 4-2 4-5-2-9-2-9" stroke-linecap="round"/><rect x="13" y="3" width="6" height="6" rx="1"/></svg></span>
+          <span class="cat-card__name">Pintura</span>
+          <span class="cat-card__count">19 profissionais</span>
+        </button>
+
+        <button class="cat-card" data-cat="Alvenaria">
+          <span class="cat-card__icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="10" width="8" height="5"/><rect x="13" y="10" width="8" height="5"/><rect x="8" y="5" width="8" height="5"/></svg></span>
+          <span class="cat-card__name">Alvenaria</span>
+          <span class="cat-card__count">14 profissionais</span>
+        </button>
+
+        <button class="cat-card" data-cat="Jardim">
+          <span class="cat-card__icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22v-9"/><path d="M12 13c0-5-4-8-8-8 0 5 3 8 8 8Z"/><path d="M12 13c0-4 3-6 7-6 0 4-2 7-7 7Z"/></svg></span>
+          <span class="cat-card__name">Jardim</span>
+          <span class="cat-card__count">11 profissionais</span>
+        </button>
+
+        <button class="cat-card cat-card--more" data-cat="">
+          <span class="cat-card__icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="19" cy="12" r="1.4"/></svg></span>
+          <span class="cat-card__name">Ver tudo</span>
+          <span class="cat-card__count">120+ especialidades</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       BUSCAR — app funcional embutido na página
+       ============================================================ -->
+  <section class="app-section" id="buscar">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow"><span class="eyebrow__dot"></span>Experimente agora</p>
+        <h2 class="h2">Busque, compare, decida</h2>
+        <p class="section-head__note">Esta é a ferramenta de verdade — os mesmos profissionais que aparecem aqui são os que você vai encontrar no app.</p>
+      </div>
+
+      <div class="app-toolbar">
+        <div class="field field--grow">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input type="text" id="appSearchInput" placeholder="Buscar por nome ou especialidade…" />
+        </div>
+        <select id="appCategorySelect" class="field field--select">
+          <option value="">Todas as categorias</option>
+          <option>Elétrica</option>
+          <option>Hidráulica</option>
+          <option>Pintura</option>
+          <option>Alvenaria</option>
+          <option>Jardim</option>
+        </select>
+      </div>
+
+      <div class="app-sort">
+        <span class="app-sort__label">Ordenar por</span>
+        <div class="app-sort__group" role="group" aria-label="Ordenar resultados">
+          <button class="sort-btn is-active" data-sort="avaliacao">Melhor avaliação</button>
+          <button class="sort-btn" data-sort="preco">Menor preço</button>
+          <button class="sort-btn" data-sort="distancia">Mais perto</button>
+        </div>
+        <span class="app-sort__count" id="resultCount"></span>
+      </div>
+
+      <div class="pro-grid" id="proGrid"></div>
+
+      <p class="app-empty hidden" id="appEmpty">Nenhum profissional encontrado com esse filtro. Tente outra especialidade.</p>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       COMPARAÇÃO
+       ============================================================ -->
+  <section class="compare-section" id="comparar">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow"><span class="eyebrow__dot"></span>A peça central do app</p>
+        <h2 class="h2">Comparação lado a lado</h2>
+        <p class="section-head__note">Marque até três profissionais na lista acima com "Comparar" — o resultado aparece aqui embaixo.</p>
+      </div>
+
+      <div class="compare-empty" id="compareEmpty">
+        <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3v18"/>
+          <path d="M5 7h5M14 7h5"/>
+          <path d="M5 7 2.5 12a2.5 2.5 0 0 0 5 0L5 7Z"/>
+          <path d="M19 7l-2.5 5a2.5 2.5 0 0 0 5 0L19 7Z"/>
+        </svg>
+        <p>Sua comparação está vazia. Escolha de 2 a 3 profissionais ali em cima para ver o comparativo.</p>
+      </div>
+
+      <div class="compare-grid hidden" id="compareGrid"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONFIANÇA
+       ============================================================ -->
+  <section class="trust" id="confianca">
+    <div class="wrap trust__inner">
+      <div class="trust__copy">
+        <p class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span>Antes de abrir a porta</p>
+        <h2 class="h2 h2--light">Verificação de verdade, não só um selinho</h2>
+        <p class="trust__lead">
+          Todo profissional verificado passa por checagem de documento e
+          comprovação de endereço. As avaliações vêm de serviços
+          efetivamente contratados pela plataforma — sem nota comprada,
+          sem comentário fantasma.
+        </p>
+
+        <ul class="trust__list">
+          <li>
+            <span class="trust__list-icon">✓</span>
+            <div><strong>Identidade confirmada</strong><span>Documento e CPF validados antes da liberação do perfil.</span></div>
+          </li>
+          <li>
+            <span class="trust__list-icon">✓</span>
+            <div><strong>Avaliação em 4 critérios</strong><span>Pontualidade, qualidade, comunicação e custo-benefício — não só estrelas soltas.</span></div>
+          </li>
+          <li>
+            <span class="trust__list-icon">✓</span>
+            <div><strong>Histórico público</strong><span>Quantos serviços já fez na plataforma e há quanto tempo está ativo.</span></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="trust__panel" aria-hidden="true">
+        <div class="review-card">
+          <div class="review-card__head">
+            <div class="avatar avatar--sm">MT</div>
+            <div>
+              <strong>Marina T.</strong>
+              <span class="muted">contratou Carlos Eduardo · Elétrica</span>
+            </div>
+            <span class="review-card__stars">★★★★★</span>
+          </div>
+          <p>"Chegou no horário combinado e mostrou o problema antes de mexer em qualquer coisa. Cobrou exatamente o que tinha orçado."</p>
+          <div class="review-card__bars">
+            <div><span>Pontualidade</span><i style="--v:96%"></i></div>
+            <div><span>Qualidade</span><i style="--v:94%"></i></div>
+            <div><span>Custo-benefício</span><i style="--v:90%"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       NÚMEROS / IMPACTO
+       ============================================================ -->
+  <section class="numbers" id="numeros">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow"><span class="eyebrow__dot"></span>O que muda na prática</p>
+        <h2 class="h2">Menos achismo, mais comprovante</h2>
+      </div>
+
+      <div class="numbers__grid">
+        <div class="number-card">
+          <span class="number-card__value">até 41%</span>
+          <span class="number-card__label">de variação de preço encontrada para o mesmo serviço, na mesma região</span>
+        </div>
+        <div class="number-card">
+          <span class="number-card__value">12 min</span>
+          <span class="number-card__label">tempo médio entre buscar e enviar o pedido de orçamento</span>
+        </div>
+        <div class="number-card">
+          <span class="number-card__value">3 em 3</span>
+          <span class="number-card__label">orçamentos comparados antes de qualquer contratação fechada</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CTA PRESTADOR
+       ============================================================ -->
+  <section class="provider-cta" id="cadastro-prestador">
+    <div class="wrap provider-cta__inner">
+      <div>
+        <p class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span>Para quem presta o serviço</p>
+        <h2 class="h2 h2--light">Sua reputação, sua régua de preço</h2>
+        <p class="provider-cta__lead">Cadastre seu perfil, defina seu preço por hora e deixe as avaliações reais falarem por você — sem pagar por destaque artificial.</p>
+      </div>
+      <a href="#" class="btn btn--solid btn--lg" id="providerSignupBtn">Criar perfil profissional</a>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <a href="#topo" class="nav__brand nav__brand--footer">
+        <span class="nav__brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+            <path d="M3 11.5 12 4l9 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5.5 10v9.5h13V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9.7 19.5v-5.2h4.6v5.2" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        Marido<em>de Aluguel</em>
+      </a>
+      <p>Comparação transparente de prestadores de serviços locais.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Serviços</h4>
+      <a href="#categorias">Elétrica</a>
+      <a href="#categorias">Hidráulica</a>
+      <a href="#categorias">Pintura</a>
+      <a href="#categorias">Jardim</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Plataforma</h4>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#confianca">Verificação</a>
+      <a href="#cadastro-prestador">Seja um prestador</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contato</h4>
+      <a href="#">ajuda@maridodealuguel.com.br</a>
+      <a href="#">0800 200 1900</a>
+    </div>
+  </div>
+
+  <div class="wrap footer__bottom">
+    <span>© 2025 Marido de Aluguel · Maringá, PR</span>
+    <span>Feito para quem precisa de um conserto e de uma resposta direta.</span>
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     BARRA FLUTUANTE DE COMPARAÇÃO
+     ============================================================ -->
+<div class="compare-bar" id="compareBar" role="status" aria-live="polite">
+  <div class="compare-bar__inner">
+    <div class="compare-bar__left">
+      <div class="compare-bar__avatars" id="compareBarAvatars"></div>
+      <div class="compare-bar__info">
+        <span class="compare-bar__count" id="compareBarCount"></span>
+        <span class="compare-bar__hint" id="compareBarHint"></span>
+      </div>
+    </div>
+    <div class="compare-bar__actions">
+      <button class="compare-bar__clear" id="compareBarClear" aria-label="Limpar selecao">
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 2l12 12M14 2L2 14"/></svg>
+        Limpar
+      </button>
+      <button class="compare-bar__cta" id="compareBarCta" disabled>
+        <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="6" height="14" rx="1"/><rect x="12" y="3" width="6" height="9" rx="1"/></svg>
+        <span id="compareBarCtaLabel">Ver comparacao</span>
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+<div class="modal" id="providerModal" aria-hidden="true">
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal__close" id="modalClose" aria-label="Fechar">✕</button>
+    <p class="eyebrow"><span class="eyebrow__dot"></span>Cadastro de prestador</p>
+    <h3 id="modalTitle">Criar perfil profissional</h3>
+    <form id="modalForm">
+      <label>Nome completo<input type="text" required placeholder="Como você quer aparecer"/></label>
+      <label>Especialidade principal
+        <select required>
+          <option value="">Selecione</option>
+          <option>Elétrica</option><option>Hidráulica</option><option>Pintura</option>
+          <option>Alvenaria</option><option>Jardim</option>
+        </select>
+      </label>
+      <label>Preço por hora (R$)<input type="number" min="1" required placeholder="Ex.: 90"/></label>
+      <button type="submit" class="btn btn--solid btn--full">Enviar cadastro</button>
+    </form>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
